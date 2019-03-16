@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Work Track</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/reset-css.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/index.css}">
+</head>
+<body>
+<section id="wrapper" class="skewed">
+    <div class="layer bottom">
+        <div class="content-wrap">
+            <div class="content-body">
+                <h1>Worker</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolore enim illum, magni
+                    nihil obcaecati quidem repellat tenetur velit!</p>
+            </div>
+            <img th:src="@{/img/s.png}" style="height: 60%; width: 45%" alt="WORKERS"/>
+        </div>
+    </div>
+    <a th:href="@{/company}">
+        <div class="layer top">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1>Company</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolore enim illum,
+                        magni nihil obcaecati quidem repellat tenetur velit!</p>
+                </div>
+                <img th:src="@{/img/office02.jpg}" alt="WORKERS"/>
+            </div>
+        </div>
+    </a>
+    <div class="handle"></div>
+</section>
+<script type="text/javascript" th:src="@{/js/main.js}"></script>
+</body>
+</html>
