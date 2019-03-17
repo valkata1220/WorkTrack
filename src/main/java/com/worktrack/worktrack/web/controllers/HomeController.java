@@ -7,9 +7,15 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
 
-    @GetMapping("/company")
+    @GetMapping("/company-index")
     public ModelAndView company(ModelAndView modelAndView){
-        modelAndView.setViewName("company");
+        modelAndView.setViewName("company-index");
+        return modelAndView;
+    }
+
+    @GetMapping("/worker-index")
+    public ModelAndView worker(ModelAndView modelAndView){
+        modelAndView.setViewName("worker-index");
         return modelAndView;
     }
 }

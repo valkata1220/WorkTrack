@@ -9,17 +9,20 @@
 </head>
 <body>
 <section id="wrapper" class="skewed">
-    <div class="layer bottom">
-        <div class="content-wrap">
-            <div class="content-body">
-                <h1>Worker</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolore enim illum, magni
-                    nihil obcaecati quidem repellat tenetur velit!</p>
+    <a th:href="@{/worker-index}">
+        <div class="layer bottom">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1>Worker</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa cupiditate dolore enim illum,
+                        magni
+                        nihil obcaecati quidem repellat tenetur velit!</p>
+                </div>
+                <img th:src="@{/img/s.png}" style="height: 60%; width: 45%" alt="WORKERS"/>
             </div>
-            <img th:src="@{/img/s.png}" style="height: 60%; width: 45%" alt="WORKERS"/>
         </div>
-    </div>
-    <a th:href="@{/company}">
+    </a>
+    <a th:href="@{/company-index}">
         <div class="layer top">
             <div class="content-wrap">
                 <div class="content-body">
