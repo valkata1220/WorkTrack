@@ -11,7 +11,6 @@ import javax.persistence.MappedSuperclass;
 public abstract class BaseEntity {
 
     private String id;
-    private String email;
 
     @Id
     @GeneratedValue(generator = "uuid-string")
@@ -23,14 +22,5 @@ public abstract class BaseEntity {
 
     public void setId(String id) {
         this.id = id;
-    }
-
-    @Column(name = "email",nullable = false,unique = true)
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

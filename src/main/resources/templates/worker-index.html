@@ -8,7 +8,11 @@
     <link rel="stylesheet" type="text/css" th:href="@{/css/worker-css/worker.css}">
 </head>
 <body data-vide-bg="/video/worker-vid.mp4">
-    <div class="login-form">
+<div class="login-form">
+    <button id="login">Login</button>
+    <button id="register">Register</button>
+    <form id="login-form" style="visibility: hidden">
+
         <h2 th:text="|SIGN IN|"></h2>
         <div class="form-input">
             <input type="text" name="" placeholder="Email">
@@ -19,8 +23,22 @@
         <div class="form-input">
             <input th:type="submit" name="" placeholder="Login">
         </div>
-    </div>
-    <script type="text/javascript" th:src="@{/js/jquery-3.3.1.slim.min.js}"></script>
-    <script type="text/javascript" th:src="@{/js/jquery.vide.js}"></script>
+    </form>
+</div>
+<script type="text/javascript" th:src="@{/js/jquery-3.3.1.slim.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/jquery.vide.js}"></script>
+<script>
+    window.onload = function () {
+
+        let login = $("#login");
+        let register = $("#register");
+        $(login).on("click", function () {
+            console.log("Working...");
+            $(login).css('visibility','hidden');
+            $(register).css('visibility','hidden');
+            $("#login-form").css('visibility','visible');
+        });
+    };
+</script>
 </body>
 </html>
