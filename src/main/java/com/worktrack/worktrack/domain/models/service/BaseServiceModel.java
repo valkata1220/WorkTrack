@@ -1,8 +1,11 @@
 package com.worktrack.worktrack.domain.models.service;
 
-public class BaseServiceModel {
+public abstract class BaseServiceModel {
 
     private String id;
+
+    protected BaseServiceModel() {
+    }
 
     public String getId() {
         return id;
