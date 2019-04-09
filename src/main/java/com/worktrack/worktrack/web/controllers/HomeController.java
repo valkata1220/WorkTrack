@@ -11,21 +11,18 @@ public class HomeController extends BaseController{
     @GetMapping("/")
     @PreAuthorize("isAnonymous()")
     public ModelAndView index(ModelAndView modelAndView){
-        modelAndView.setViewName("index");
-        return modelAndView;
+        return super.view("index");
     }
 
     @GetMapping("/company-index")
     @PreAuthorize("isAnonymous()")
     public ModelAndView company(ModelAndView modelAndView){
-        modelAndView.setViewName("company-index");
-        return modelAndView;
+        return super.view("company-index");
     }
 
     @GetMapping("/worker-index")
     @PreAuthorize("isAnonymous()")
     public ModelAndView worker(ModelAndView modelAndView){
-        modelAndView.setViewName("worker-index");
-        return modelAndView;
+       return super.view("worker-index");
     }
 }
