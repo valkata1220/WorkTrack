@@ -12,7 +12,6 @@ public class CompanyServiceModel extends BaseServiceModel {
     private String phoneNumber;
     private String companyName;
     private String jobArea;
-    private String logo;
     private Set<RoleServiceModel> authorities;
 
     public String getUsername() {
@@ -61,14 +60,6 @@ public class CompanyServiceModel extends BaseServiceModel {
 
     public void setJobArea(String jobArea) {
         this.jobArea = jobArea;
-    }
-
-    public String getLogo() {
-        return logo;
-    }
-
-    public void setLogo(String logo) {
-        this.logo = logo;
     }
 
     public Set<RoleServiceModel> getAuthorities() {
