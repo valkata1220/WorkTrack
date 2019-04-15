@@ -29,7 +29,7 @@ public class Company extends BaseUserEntity {
         this.jobArea = jobArea;
     }
 
-    @Column(name = "logo",nullable = false)
+    @Column(name = "logo")
     public String getLogo() {
         return logo;
     }
