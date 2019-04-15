@@ -19,12 +19,13 @@ a:hover {
 }
 
 .form {
+    background: rgba(255, 255, 255, 0.8);
     padding: 40px;
     max-width: 600px;
     margin: 40px auto;
     border-radius: 4px;
     box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
-    transition: .5s ease;
+    transition: .20s ease;
 }
 
 .form:hover {
@@ -55,11 +56,11 @@ a:hover {
     transition: .5s ease;
 }
 .tab-group li a:hover {
-    background: #179b77;
+    background: orange;
     color: #ffffff;
 }
 .tab-group .active a {
-    background: #1ab188;
+    background: coral;
     color: #ffffff;
 }
 
@@ -69,7 +70,7 @@ a:hover {
 
 h1 {
     text-align: center;
-    color: #fff;
+    color: black;
     font-weight: 300;
     margin: 0 0 40px;
 }
@@ -78,7 +79,7 @@ label {
     position: absolute;
     transform: translateY(6px);
     left: 13px;
-    color: rgba(255,255,255,0.7);
+    color: gray;
     transition: all 0.25s ease;
     pointer-events: none;
     font-size: 22px;
@@ -110,8 +111,8 @@ input {
     padding: 5px 10px;
     background: none;
     background-image: none;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 2px solid darkgrey;
+    color: black;
     border-radius: 0;
     transition: border-color .25s ease, box-shadow .25s ease;
 }
@@ -135,7 +136,7 @@ input:focus{
     width: 48%;
     margin-right: 4%;
 }
-.top-row > div:last-child {
+.top-row > div:nth-child(even) {
     margin: 0;
 }
 
